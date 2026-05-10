@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Book Appointment | Dr. GVKR's Neuro Care - Neurology Consultation Mahabubnagar</title>
+    <meta name="description" content="Book an appointment with Dr. GVKR's Neuro Care. Easy online booking and WhatsApp appointment scheduling.">
+    <meta name="keywords" content="book neurologist appointment, online consultation, WhatsApp booking">
+    <meta name="author" content="Dr. GVKR's Neuro Care">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.gvkrneurocare.com/appointments.html">
+    <meta property="og:title" content="Book Appointment | Dr. GVKR's Neuro Care">
+    <meta property="og:image" content="https://image2url.com/r2/default/images/1768673427917-c0f4e64e-9f88-4378-beea-47c9b34e2031.png">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo-container">
+                    <img src="https://image2url.com/r2/default/images/1768673427917-c0f4e64e-9f88-4378-beea-47c9b34e2031.png" alt="Dr. GVKR's Neuro Care Logo" class="logo">
+                    <div class="logo-text"><h1>Dr. GVKR's Neuro Care</h1><p>Specialized Neurology Hospital</p></div>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About Us</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="doctors.html" class="nav-link">Our Doctors</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="appointments.html" class="nav-link appointment-btn active">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1 class="page-title">Book Your <span class="highlight">Appointment</span></h1>
+                <p class="page-subtitle">Easy online booking and consultation with our expert neurologists</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="appointment-section">
+        <div class="container">
+            <div class="appointment-container">
+                <div class="appointment-info scroll-reveal">
+                    <h2>Why Choose Dr. GVKR's Neuro Care?</h2>
+                    <div class="benefits-list">
+                        <div class="benefit-item"><i class="fas fa-check-circle"></i><div><h4>Expert Neurologists</h4><p>Consult with highly qualified neurologists</p></div></div>
+                        <div class="benefit-item"><i class="fas fa-check-circle"></i><div><h4>Same-Day Appointments</h4><p>Emergency consultations within 24 hours</p></div></div>
+                        <div class="benefit-item"><i class="fas fa-check-circle"></i><div><h4>Advanced Diagnostics</h4><p>State-of-the-art diagnostic facilities</p></div></div>
+                        <div class="benefit-item"><i class="fas fa-check-circle"></i><div><h4>Personalized Care</h4><p>Tailored treatment plans for each patient</p></div></div>
+                    </div>
+                    <div class="emergency-box">
+                        <h3><i class="fas fa-ambulance"></i> Neurological Emergency?</h3>
+                        <p>For stroke, seizures, or severe neurological symptoms, call immediately:</p>
+                        <a href="tel:09494067108" class="btn-emergency"><i class="fas fa-phone-alt"></i> Emergency: 094940 67108</a>
+                    </div>
+                </div>
+                
+                <div class="appointment-form scroll-reveal delay-1">
+                    <h2>Book Appointment</h2>
+                    <p class="form-subtitle">Fill the form below and we'll contact you to confirm</p>
+                    <form id="appointmentForm">
+                        <div class="form-group"><label>Full Name *</label><input type="text" id="fullName" name="fullName" required placeholder="Enter your full name"></div>
+                        <div class="form-row"><div class="form-group"><label>Phone Number *</label><input type="tel" id="phone" name="phone" required placeholder="Enter your phone number"></div>
+                        <div class="form-group"><label>Email Address</label><input type="email" id="email" name="email" placeholder="Enter your email"></div></div>
+                        <div class="form-group"><label>Age *</label><input type="number" id="age" name="age" required min="1" max="120" placeholder="Enter your age"></div>
+                        <div class="form-group"><label>Symptoms / Condition *</label><textarea id="symptoms" name="symptoms" required rows="3" placeholder="Describe your symptoms"></textarea></div>
+                        <div class="form-group"><label>Preferred Date *</label><input type="date" id="preferredDate" name="preferredDate" required></div>
+                        <div class="form-group"><label>Preferred Time *</label><select id="preferredTime" name="preferredTime" required><option value="">Select time slot</option><option value="9am-11am">Morning (9 AM - 11 AM)</option><option value="11am-1pm">Late Morning (11 AM - 1 PM)</option><option value="2pm-4pm">Afternoon (2 PM - 4 PM)</option><option value="4pm-6pm">Evening (4 PM - 6 PM)</option><option value="6pm-8pm">Late Evening (6 PM - 8 PM)</option></select></div>
+                        <div class="form-group"><label>Preferred Doctor (Optional)</label><select id="doctor" name="doctor"><option value="">Any Available Doctor</option><option value="dr-gvkr">Dr. GVKR (Senior Neurologist)</option><option value="dr-smita">Dr. Smita Reddy (Epilepsy Specialist)</option><option value="dr-arjun">Dr. Arjun Kumar (Stroke Specialist)</option><option value="dr-priya">Dr. Priya Sharma (Headache Specialist)</option></select></div>
+                        <div class="form-group checkbox-group"><input type="checkbox" id="whatsapp" name="whatsapp"><label>I prefer to be contacted via WhatsApp</label></div>
+                        <button type="submit" class="btn-primary btn-block">Book Appointment Now</button>
+                        <p class="form-note">By booking, you agree to our Terms of Service and Privacy Policy</p>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="whatsapp-booking scroll-reveal">
+                <div class="whatsapp-content">
+                    <div class="whatsapp-icon"><i class="fab fa-whatsapp"></i></div>
+                    <div class="whatsapp-text"><h3>Prefer WhatsApp Booking?</h3><p>Click below to book your appointment directly through WhatsApp.</p></div>
+                    <div class="whatsapp-action"><a href="#" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Book via WhatsApp</a><p class="whatsapp-note">Usually responds within 15 minutes</p></div>
+                </div>
+            </div>
+            
+            <div class="appointment-tips">
+                <h3 class="section-title">Preparing for Your <span class="highlight">Appointment</span></h3>
+                <div class="tips-grid">
+                    <div class="tip-card"><i class="fas fa-clipboard-list"></i><h4>Bring Medical History</h4><p>Bring all previous medical records and medications list.</p></div>
+                    <div class="tip-card"><i class="fas fa-comment-medical"></i><h4>Note Your Symptoms</h4><p>Write down all symptoms and when they started.</p></div>
+                    <div class="tip-card"><i class="fas fa-question-circle"></i><h4>Prepare Questions</h4><p>List down all questions about your condition.</p></div>
+                    <div class="tip-card"><i class="fas fa-user-friends"></i><h4>Bring a Companion</h4><p>Consider bringing a family member for support.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col"><div class="footer-logo"><img src="https://image2url.com/r2/default/images/1768673427917-c0f4e64e-9f88-4378-beea-47c9b34e2031.png" alt="Logo" class="logo"><h3>Dr. GVKR's Neuro Care</h3></div><p>Premier neurology hospital in Mahabubnagar.</p><div class="social-icons"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+                <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="doctors.html">Our Doctors</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+                <div class="footer-col"><h4>Our Services</h4><ul><li><a href="services.html#stroke">Stroke Management</a></li><li><a href="services.html#headache">Headache Treatment</a></li><li><a href="services.html#epilepsy">Epilepsy Care</a></li><li><a href="services.html#neuromuscular">Neuromuscular Disorders</a></li><li><a href="services.html#parkinson">Parkinson's Disease</a></li></ul></div>
+                <div class="footer-col"><h4>Contact Info</h4><div class="contact-info"><p><i class="fas fa-map-marker-alt"></i> H No 1\4\147, Rajendra Nagar, Mahabubnagar</p><p><i class="fas fa-phone"></i> 094940 67108</p><p><i class="fas fa-envelope"></i> neurocarebydrgvkrgoud@gmail.com</p><p><i class="fas fa-clock"></i> Mon-Sun: 24/7 Emergency</p></div></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; <span id="currentYear">2026</span> Dr. GVKR's Neuro Care. All Rights Reserved.</p></div>
+        </div>
+    </footer>
+
+    <div class="whatsapp-float"><i class="fab fa-whatsapp"></i></div>
+
+    <script src="js/script.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
